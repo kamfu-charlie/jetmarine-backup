@@ -1,7 +1,632 @@
+
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+ <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta charec set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Page Title -->
+        <title>Jet Marines</title>
+		<!-- Meta Description -->
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="img/jetmarine.png"/>
+
+		<!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- animate -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+		<!-- media-queries -->
+        <link rel="stylesheet" href="css/media-queries.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+    </head>
+
+    <body id="body">
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>
+					<!-- /responsive nav button -->
+
+					<!-- logo -->
+                    <a class="navbar-brand" href="#body">
+						<h1 id="logo">
+							<img src="img/jetmarine.png" alt="Jet Marine">
+						</h1>
+					</a>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right mainnav" role="navigation" id="mainNav">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current "><a href="#body" class="js-scroll-trigger">Home</a></li>
+                        <li><a href="#aboutus" class="js-scroll-trigger">About Us</a></li>
+                        <li><a href="#services" class="js-scroll-trigger">Our Services</a></li>
+                         <li><a href="#report" class="js-scroll-trigger">Performance</a></li>
+                        <li><a href="#clients" class="js-scroll-trigger">Clients</a></li>
+                        <li><a href="#contact" class="js-scroll-trigger">Contact Us</a></li>
+
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+<style>
+h2, .h2 {
+  font-size: 30px;
+}
+h3, .h3 {
+  font-size: 20px;
+}
+p {
+	font-size: 15px;
+}
+.service-desc p,
+.desc-txt p
+{
+	text-align: justify;
+}
+#navigation
+{
+  transition: background-color 0.5s ease;
+}
+#back-top
+{
+	padding: 5px;
+	border-radius: 3px;
+}
+</style>
+ <!--
+        Home Slider
+        ==================================== -->
+
+		<section id="slider">
+			<div class="sl-inner">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" id="banner-slider" role="listbox">
+				    <div class="item active">
+				      <img src="img/banner/bannerimage1.png" alt="">
+				      <div class="carousel-caption">
+				      	<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet Team !</h2>
+						<h3 data-wow-duration="500ms" class="wow bounceInDown animated">Jet Marine.</h3>
+				      </div>
+				    </div>
+				    <div class="item">
+				       <img src="img/banner/bannerimage2.png" alt="">
+				      <div class="carousel-caption">
+				      	<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet Team !</h2>
+						<h3 data-wow-duration="500ms" class="wow bounceInDown animated">Jet Marine.</h3>
+				      </div>
+				    </div>
+				    <div class="item">
+				       <img src="img/banner/bannerimage3.png" alt="">
+				      <div class="carousel-caption">
+				      	<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet Team !</h2>
+						<h3 data-wow-duration="500ms" class="wow bounceInDown animated">Jet Marine.</h3>
+				      </div>
+				    </div>
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>
+		</section>
+
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+
+        <!--
+        About Us
+        ==================================== -->
+
+		<section id="aboutus" class="aboutus section">
+			<div class="container-fluid">
+				<div class="row">
+					<!-- service item -->
+					<div class="col-md-12 wow fadeInUp" data-wow-duration="100ms" data-wow-delay="100ms">
+						<div class="about-col-sec">
+							<div class="row">
+								<div class="col-md-2 col-sm-2 col-xs-12 ">
+									<div class="row">
+										<div class="col-lg-12 col-xs-6" id="abs-1">
+											<div class="abs-mg">
+												<img src="img/jet/Award1.png" class="img-responsive">
+											</div>
+										</div>
+										<div class="col-lg-12 col-xs-6" id="abs-2">
+											<div class="abs-mg">
+												<img src="img/jet/Award.jpg" class="img-responsive">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-10 col-sm-10 col-xs-12">
+									<div class="about-desc">
+										<div class="desc-inner text-center">
+											<h2>About us</h2>
+										</div>
+										<div class="desc-txt">
+											<p>Jet-Marine was setup in 2017, extend from K.T. Lau Marine (Propulsion Consultency) in small boat design (below 5000tons）Propellers, as established since 1987, and partner with world class Manufacturer - Stone Marine and Mencast Engineering.</p>
+										<p>With 45 Years experience in Marine Engineering, and 35 years in fixed pitch, Custom High Performnce Quality Propellers, we had a Simple Singularity Linear Solution(1984), into delivering our expertise with proven results.</p>
+										<p>Through our experience, in response to our end-user toughest profile operational challenges, vital needs and requirements, we had our new Linear Database Program - onto custom our New Innovation Generation Optimzation Performance Propellers.</p>
+										<li>To getting the right Hull Efficient Size - to Speed Perform</li>
+										<li>Getting its right Streamlines - Over Power Plant, to its gears</li>
+										<li>With its optimum propeller Tip Efficiency - Deliver Effective</li>
+										<li>Toward to a Right Propeller Blade’s Area(BAR), & Pitch/P/D</li>
+										</p>
+										<p>The whole, design, lines, powerplant, gears, to custom propeller work together operate at its peak performance gradient, efficiently. It would deliver its capabilities at respective load rpm, to its speed best performance, at reduced engine RPM,to conserve its engine reliability, to lower fuel cost and engine durability.</p>
+										<p>Jet-Marine was then setup, to promote and further support our new custom Linear Generation Propeller-Sales and After-sale Service, to future years to come.</p>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<!-- end service item -->
+
+
+
+				</div>
+			</div>
+		</section>
+
+        <!--
+        End About Us
+        ==================================== -->
+
+        <!--
+        Our Services
+        ==================================== -->
+
+        <section id="services" class="services section wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+        	<div class="container-fluid">
+        		<div class="services-inner">
+        			<div class="services-heading text-center">
+        				<h2>Our Services</h2>
+        			</div>
+        			<div class="row">
+	        			<div class="col-lg-3 col-md-6 col-sm-6">
+	        				<div class="service-wrapper">
+	        					<div class="service-logo">
+	        						<img src="img/consultation.png" class="non-hover">
+	        						<img src="img/consulation-w.png" class="onhover">
+	        					</div>
+	        					<div class="service-desc">
+	        						<h3>Specialist Consultants</h3>
+	        						<p>Our specialist consultant team has more than 45 years of experience in Marine engineering for the best quality propellers. Our expert team is fully capable to deliver the high performance propellers with proven results. Whatever is your requirement, our team is there to support you.</p>
+	        						<div class="can-link">
+	        							<a href="#contact" class="js-scroll-trigger" target="_blank">Contact Us</a>
+	        						</div>
+	        					</div>
+	        				</div>
+	        			</div>
+	        			<div class="col-lg-3 col-md-6 col-sm-6">
+	        				<div class="service-wrapper">
+	        					<div class="service-logo">
+	        						<img src="img/design.png">
+	        						<img src="img/design-w.png" class="onhover">
+	        					</div>
+	        					<div class="service-desc">
+	        						<h3>Design Team</h3>
+	        						<p>Our design team focuses on peak performance with better efficiency for our propellers. Our design would deliver its best capabilities at respective load RPM ,at reduced engine RPM, to conserve its engine reliability leading to lower fuel cost and engine durability.</p>
+	        						<div class="can-link">
+	        							<a href="http://google.com" class="js-scroll-trigger" target="_blank">Meet Team</a>
+	        						</div>
+	        					</div>
+	        				</div>
+	        			</div>
+	        			<div class="col-lg-3 col-md-6 col-sm-6">
+	        				<div class="service-wrapper">
+	        					<div class="service-logo">
+	        						<img src="img/propeller.png">
+	        						<img src="img/propeller-w.png" class="onhover">
+	        					</div>
+	        					<div class="service-desc">
+	        						<h3>Our Propeller</h3>
+	        						<p>With decades of experience in small boat design and development of propellers, we deliver the finest propellers with proven results of low fuel cost, highest quality, reliability and durability.  We design and develop latest innovative and optimized performance propellers.</p>
+	        						<div class="can-link">
+	        							<a href="#products" class="js-scroll-trigger" target="_blank">View More</a>
+	        						</div>
+	        					</div>
+	        				</div>
+	        			</div>
+	        			<div class="col-lg-3 col-md-6 col-sm-6">
+	        				<div class="service-wrapper">
+	        					<div class="service-logo">
+	        						<img src="img/selling.png">
+	        						<img src="img/selling-w.png" class="onhover">
+	        					</div>
+	        					<div class="service-desc">
+	        						<h3>Ship to sell</h3>
+	        						<p>We believe in delivering the greatest in whatever we do. We offer different ranges of ships as per the customer requirement. First, our team will discuss the requisite in details and then based on the inputs from the clients; we provide the best options which suits clients’ need.</p>
+	        						<div class="can-link">
+	        							<a href="#" class="js-scroll-trigger" target="_blank">Meet Team</a>
+	        						</div>
+	        					</div>
+	        				</div>
+	        			</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+
+
+		<!--
+       	Products
+        ==================================== -->
+
+        <section id="products" class="section wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+        	<div class="container">
+        		<div class="product-heading text-center">
+        			<h2>Our Propeller</h2>
+        		</div>
+        		<div class="products-wrapper">
+        			<div class="row">
+        				<div class="col-lg-4 col-md-4 col-sm-6 ">
+        					<div class="product-warpper">
+        						<div class="product-image">
+        							<img src="img/jet/Propeller.png" class="img-fluid img-responsive">
+        						</div>
+        						<div class="product-detail">
+        							<h3>Loreum Ipsum</h3>
+        							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-lg-4 col-md-4 col-sm-6">
+        					<div class="product-warpper">
+        						<div class="product-image">
+        							<img src="img/jet/Propeller.png" class="img-fluid img-responsive">
+        						</div>
+        						<div class="product-detail">
+        							<h3>Loreum Ipsum</h3>
+        							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-lg-4 col-md-4 col-sm-6">
+        					<div class="product-warpper">
+        						<div class="product-image">
+        							<img src="img/jet/Propeller.png" class="img-fluid img-responsive">
+        						</div>
+        						<div class="product-detail">
+        							<h3>Loreum Ipsum</h3>
+        							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-lg-4 col-md-4 col-sm-6">
+        					<div class="product-warpper">
+        						<div class="product-image">
+        							<img src="img/jet/Propeller.png" class="img-fluid img-responsive">
+        						</div>
+        						<div class="product-detail">
+        							<h3>Loreum Ipsum</h3>
+        							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-lg-4 col-md-4 col-sm-6">
+        					<div class="product-warpper">
+        						<div class="product-image">
+        							<img src="img/jet/Propeller.png" class="img-fluid img-responsive">
+        						</div>
+        						<div class="product-detail">
+        							<h3>Loreum Ipsum</h3>
+        							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-lg-4 col-md-4 col-sm-6">
+        					<div class="product-warpper">
+        						<div class="product-image">
+        							<img src="img/jet/Propeller.png" class="img-fluid img-responsive">
+        						</div>
+        						<div class="product-detail">
+        							<h3>Loreum Ipsum</h3>
+        							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+
+        <!--
+       	End Products
+        ==================================== -->
+        <!--
+       	Performance
+        ==================================== -->
+       <section id="report" class="section wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+        	<div class="container">
+        		<div class="report-heading text-center">
+        			<h2>Performance</h2>
+        		</div>
+        		<div class="report-main-wrapper">
+        			<div class="row">
+        				<div class="col-lg-4 col-md-4 col-sm-6 ">
+        					<div class="report-warpper">
+        						<div class="report-image">
+        							<img src="img/performance.jpg" class="img-fluid img-responsive">
+        						</div>
+        						<div class="report-detail">
+        							<h3>Loreum Ipsum</h3>
+        							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        							<div class="can-link">
+	        							<a href="#" target="_blank">View More</a>
+	        						</div>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-lg-4 col-md-4 col-sm-6 ">
+        					<div class="report-warpper">
+        						<div class="report-image">
+        							<img src="img/performance.jpg" class="img-fluid img-responsive">
+        						</div>
+        						<div class="report-detail">
+        							<h3>Loreum Ipsum</h3>
+        							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        							<div class="can-link">
+	        							<a href="#" target="_blank">View More</a>
+	        						</div>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-lg-4 col-md-4 col-sm-6 ">
+        					<div class="report-warpper">
+        						<div class="report-image">
+        							<img src="img/performance.jpg" class="img-fluid img-responsive">
+        						</div>
+        						<div class="report-detail">
+        							<h3>Loreum Ipsum</h3>
+        							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        							<div class="can-link">
+	        							<a href="#" target="_blank">View More</a>
+	        						</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--
+       	End Performance
+        ==================================== -->
+
+         <!--
+       	Clients
+        ==================================== -->
+        <section id="clients" class="clients section wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
+        	<div class="container-fluid">
+        		<div class="client-slider">
+        					<div class="client-heading">
+        						<h2>Clients</h2>
+        					</div>
+        					<div class="client-slider-wrapper">
+        						<div class="owl-carousel owl-theme client-carousel">
+								    <div class="item ">
+								    	<div class="client-slider-txt">
+								    		<h3>Malaysia</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Indonesia</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Bangladesh</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>China</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Myanmar</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Abu Dhabi</h3>
+								    	</div>
+								    </div>
+								     <div class="item ">
+								    	<div class="client-slider-txt">
+								    		<h3>Thailand</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Cambodia</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Iran</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Vietnam</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Philippines</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Congo Africa</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Madagascar</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Papua New Guinea</h3>
+								    	</div>
+								    </div>
+								    <div class="item">
+								    	<div class="client-slider-txt">
+								    		<h3>Solomon Island</h3>
+								    	</div>
+								    </div>
+								</div>
+        					</div>
+        		</div>
+        	</div>
+        </section>
+	    <!--
+        End Clients
+        ==================================== -->
+
+         <!--
+       Footer
+        ==================================== -->
+
+        <footer id="contact" class="footer">
+		<div class="footer-heading">
+			<h2>Contact Us</h2>
+		</div>
+			<div class="container-fluid">
+				<div class="row"-fluid>
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+						<div class="footer-single" id="ft-2">
+							<h3>Address:</h3>
+							<p>No. 24A, Lanang Road, 96000 Sibu, Sarawak, East Malaysia.</p>
+							<div class="contact-no">
+								<h3>Tel:<span>(+6084)333 375</span></h3>
+								<h3>Fax:<span>(+6084)316 390</span></h3>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="footer-single" id="ft-3">
+							<h3>Follow Us</h3>
+							<div class="social-icons">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook-square" data-toggle="tooltip" title="Facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram" data-toggle="tooltip" title="Instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-newspaper-o" data-toggle="tooltip" title="News"></i></a></li>
+									<li><a href="#"><i class="fa fa-shopping-cart" data-toggle="tooltip" title="Store"></i></a></li>
+								</ul>
+							</div>
+							<div class="email-ids">
+							<h3>Email:</h3>
+								<p>admin@jetmarine.my</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Single Page Nav -->
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+		<!-- jquery easing -->
+        <script src="js/wow.min.js"></script>
+		<script>
+			var wow = new WOW ({
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       120,          // distance to the element when triggering the animation (default is 0)
+				mobile:       true,       // trigger animations on mobile devices (default is true)
+				live:         true        // act on asynchronously loaded content (default is true)
+			  }
+			);
+			wow.init();
+		</script>
+		<!-- Custom Functions -->
+        <script src="js/custom.js"></script>
+        <script src="js/nav-dropdown.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+		<script type="text/javascript">
+			$('.client-carousel').owlCarousel({
+		        items: 5,
+		        margin:5,
+		        autoplay: true,
+		        navigation:true,
+		        autoplay:true,
+
+		        navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+
+
+			})
+
+		</script>
+		<script type="text/javascript">
+					$(document).ready(function(){
+		        $('[data-toggle="tooltip"]').tooltip();
+		    });
+		</script>
+
+    </body>
 </html>
