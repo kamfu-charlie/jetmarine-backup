@@ -1,0 +1,269 @@
+
+/* =================================== */
+/*	Basic Style 
+/* =================================== */
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@font-face {
+    font-family: Arial;
+    src: url(fonts/Arial regular.ttf);
+}
+body {
+    background-color: #fff;
+    font-family: Arial,sans-serif; 
+    line-height: 21px;
+	  font-size: 15px;
+    color: #6a737b;
+    overflow-x: hidden;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure, p {
+    margin: 0;
+}
+
+a {
+    color: #fff;
+	
+    -webkit-transition: all .3s ease-in 0s;
+       -moz-transition: all .3s ease-in 0s;
+        -ms-transition: all .3s ease-in 0s;
+         -o-transition: all .3s ease-in 0s;
+            transition: all .3s ease-in 0s;
+}
+
+iframe {
+    border: 0;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: 'Lobster', cursive!important;
+	font-weight: normal;
+	margin: 0;
+}
+
+h2{
+  font-size: 40px;
+  color: #264d67;
+}
+p{
+  font-size: 18px;
+  line-height: 1.4;
+}
+li{
+   font-size: 18px;
+}
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+ 
+.clear:after {
+   clear: both;
+}
+ 
+.clear {
+   *zoom: 1;
+}
+
+span.color {
+	color: #0feb9e;
+}
+
+.section
+{
+	padding: 70px 0 20px 0!important;
+}
+
+
+.mb50 {
+	margin-bottom: 50px;
+}
+
+#preloader {
+  background-color: #fff;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1100;
+}
+
+#preloader > img {
+  left: 47%;
+  position: absolute;
+  top: 48%;
+}
+
+
+/*=========================================
+	Header
+==========================================*/
+
+#navigation {
+  border: 0 none;
+  margin: 0;
+    /*-webkit-transition: background-color 800ms linear;
+       -moz-transition: background-color 800ms linear;
+	    -ms-transition: background-color 800ms linear;
+         -o-transition: background-color 800ms linear;
+			transition: background-color 800ms linear;*/
+}
+
+.navbar-toggle i {
+	color: #fff;
+}
+
+.navbar-brand {
+  padding: 0;
+  height: auto!important;
+}
+
+.navbar-nav li a {
+	border-top: 2px solid transparent;
+  font-family: 'Lobster', cursive!important;
+  font-size: 20px;
+}
+#nav{
+         margin: 34px 25px!important;
+         z-index: 5;
+}
+a.navbar-brand img {
+    width: 120px!important;
+}
+
+
+.navbar-nav li a.current,
+.navbar-nav li a:focus,
+.navbar-nav li a:hover {
+	background-color: transparent;
+  border-bottom:2px solid #fff;
+	color:#fff;
+}
+
+
+
+
+
+
+/*=========================================
+	Slider
+==========================================*/
+
+#slider {
+	padding: 0;
+  height: 100%!important;
+  /*margin-bottom: 100px;*/
+}
+
+#slider .carousel-inner .item {
+  background-size: cover;
+}
+#banner-slider .item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.carousel-caption {
+  top: 35%;
+  z-index: 4;
+}
+
+.carousel-caption h2 {
+  font-size: 62px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.carousel-caption h3 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 6px 0 20px;
+  color: #fff;
+}
+
+.carousel-indicators li {
+  border:0;
+  background-color: #032236!important;
+  height: 16px;
+  width: 16px;
+}
+
+.carousel-indicators .active {
+  height: 16px;
+  width: 16px;
+  background-color: #264d67!important;
+}
+.carousel-control.right,.carousel-control.left{
+  background: transparent!important;
+}
+.sl-inner {
+    position: relative;
+    margin-bottom: 70px;
+}
+.sl-inner::before {
+    content: '';
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+    background-image: url(../img/al.png);
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.sl-inner::after {
+    content: '';
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    background-image: url(../img/ar.png);
+    width: 100%;
+    height:50%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+
+
+/*=========================================
+	Footer
+==========================================*/
+
+
+.footer {
+  background-color: #1ea78d;
+  border-top: 5px solid #062033;
+  color: #fff;
+}
+
+
+#back-top {
+  bottom: 20px;
+  position: fixed;
+  right: 25px;
+  z-index: 9;
+  color: #264d67;
+}
+#back-top:hover,#back-top:focus{
+  color: #fff;
+  background:#264d67;
+}
