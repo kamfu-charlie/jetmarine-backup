@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jet Marine | Marine Propeller Design Specialist</title>
+    <noscript>
+        <style>
+            #mainBody {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/FeedEk/3.0.0/css/FeedEk.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300">
+    <link rel="stylesheet" href="http://app.kamfu.app/jetmarine/custom.css?1" />
+    <link rel="icon" type="image/png" href="images/jm.icon.png">
+
+    <style>
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        .trn,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h4.services-desc {
+            font-size: 1.2rem !important;
+            font-weight: 100 !important;
+            line-height: 1.6 !important;
+            /* text-align: justify !important; */
+        }
+
+        .bx-wrapper .bx-controls-direction a {
+            z-index: 2;
+        }
+
+        .image-container-instagram {
+            max-width: 360px;
+            max-height: 300px;
+            margin: 50px 20px 20px 20px;
+            border-radius: 10px;
+        }
+
+        .text-white {
+            text-shadow: 2px 2px 2px #333;
+        }
+    </style>
+</head>
+
+<body id="mainBody">
+    <header class="header-sticky" id="navigation-lang">
+        <ul class="nav justify-content-between navbar-signup">
+
+            <li class="nav-item  showOnScroll" role="presentation"><a class="nav-link text-dark" href="#"><i
+                        class=" mr-1 fas fa-landmark"></i><span class="trn">{about}</span></a></li>
+            <li class="nav-item  showOnScroll" role="presentation"><a class="nav-link text-dark" href="#"><i
+                        class=" mr-1 fas fa-newspaper"></i><span class="trn">{services}</span></a></li>
+            <li class="nav-item  showOnScroll" role="presentation"><a class="nav-link text-dark" href="#"><img
+                        src="images/jm.icon.png?1" style="width:32px;height:32px;margin-top:-5px;" /></a></li>
+            <li class="nav-item  showOnScroll" role="presentation"><a class="nav-link text-dark" href="#"><i
+                        class=" mr-1 fas fa-users"></i><span class="trn">{performance}</span></a></li>
+            <li class="nav-item  showOnScroll" role="presentation"><a class="nav-link text-dark" href="#"><i
+                        class=" mr-1 fas fa-headset"></i><span class="trn">{contact}</span></a></li>
+
+        </ul>
+    </header>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-md" id="navigation">
+            <div class="container-fluid">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <a class="d-block d-sm-block d-md-none d-none d-md-block d-lg-none" href="index.html"><img
+                        style="width:64px;height:64px;" src="images/jm.icon.png?1" /></a>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul id="ul-menu" class="nav navbar-nav d-flex " style="justify-content: space-evenly!important;">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i
+                                    class=" mr-1 fas fa-landmark"></i><span class="trn">{about}</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i
+                                    class=" mr-1 fas fa-newspaper"></i><span class="trn">{services}</span></a></li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-service" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class=" mr-1 fas fa-newspaper"></i><span class="trn">{services}</span></a>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown-service">
+                                <a class="dropdown-item" href="services.html">Services</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li> -->
+                        <li class="nav-item" role="presentation" id="nav_home"><a class="nav-link home_logo_container"
+                                href="#"><img id="home_logo_xl" class="home_logo_xl" src="images/jm.icon.png?1" /></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i
+                                    class=" mr-1 fas fa-users"></i><span class="trn">{performance}</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i
+                                    class=" mr-1 fas fa-headset"></i><span class="trn">{contact}</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="div-jumbotron" class="jumbotron rounded-0" data-aos="zoom-in-down">
+        <div class="d-flex justify-content-center align-items-center align-self-center flex-column mt-4 mb-2"
+            style="height: 50vh;">
+            <div class="mt-auto mb-auto p-2 bd-highlight" data-aos="zoom-in-up">
+                <h1 class="text-shadow display-5 text-white text-center text-bold">New Generation High Performance
+                    Propeller</h1>
+            </div>
+            <div class="p-2 bd-highlight" data-aos="zoom-in-right">
+                <h3 class="text-shadow text-white text-center">For the Ultimate Spin and broaden your horizons</h3>
+            </div>
+            <div class="p-2 bd-highlight" data-aos="zoom-in-left">
+                <h2 class="text-shadow lead text-white text-center">Your specialist in marine propulsion since 1987</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container article" id="about" style="min-height:100vh;padding-top:40px;margin-bottom:60px;"
+        data-aos="fade-up-right">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+
+                <div class="main-carousel mb-5">
+                    <div class="carousel-cell">
+                        <img src="images/cropped2/s1.png?2" class="responsive-image carousel-cell-image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/cropped2/s2.png?2" class="responsive-image carousel-cell-image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/cropped2/s3.png?2" class="responsive-image carousel-cell-image">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12" data-aos="fade-up-left">
+                <!-- <iframe src="https://feed.mikle.com/widget/v2/100488/" height="358px" width="100%" class="fw-iframe"
+                    scrolling="no" frameborder="0"></iframe> -->
+            </div>
+        </div>
+    </div>
+    <div id="div-cert" class="mt-2" style="margin-bottom:60px;" data-aos="fade-up">
+        <h1 class="text-center trn">{about}</h1>
+        <br />
+        <img src="images/recongize.cert.png" class="responsive-image" style="margin:0 auto;" />
+    </div>
+    <div class="container-fluid" id="intro" style="min-height:100vh;" data-aos="fade-up">
+        <div class="row m-3">
+            <div class="col-md-12 col-xs-12">
+                <div class="lang-en">
+                    <div class="desc-txt">
+                        <h4 class="services-desc">Jet-Marine was setup in 2017, extend from K.T. Lau Marine (Propulsion
+                            Consultency) in small boat design (below 5000tons）Propellers, as established since 1987, and
+                            partner with world class Manufacturer - Stone Marine and Mencast Engineering.</h4>
+                        <h4 class="services-desc">With 45 Years experience in Marine Engineering, and 35 years in fixed
+                            pitch, Custom High Performnce Quality Propellers, we had a Simple Singularity Linear
+                            Solution(1984), into delivering our expertise with proven results.</h4>
+                        <h4 class="services-desc">Through our experience, in response to our end-user toughest profile
+                            operational challenges, vital needs and requirements, we had our new Linear Database Program
+                            - onto custom our New Innovation Generation Optimzation Performance Propellers.</h4>
+                        <ul class="m-2">
+                            <li>To getting the right Hull Efficient Size - to Speed Perform</li>
+                            <li>Getting its right Streamlines - Over Power Plant, to its gears</li>
+                            <li>With its optimum propeller Tip Efficiency - Deliver Effective</li>
+                            <li>Toward to a Right Propeller Blade’s Area(BAR), & Pitch/P/D</li>
+                        </ul>
+                        <h4 class="services-desc">The whole, design, lines, powerplant, gears, to custom propeller work
+                            together operate at its peak performance gradient, efficiently. It would deliver its
+                            capabilities at respective load rpm, to its speed best performance, at reduced engine RPM,to
+                            conserve its engine reliability, to lower fuel cost and engine durability.</h4>
+                        <h4 class="services-desc">Jet-Marine was then setup, to promote and further support our new
+                            custom Linear Generation Propeller-Sales and After-sale Service, to future years to come.
+                        </h4>
+                    </div>
+                </div>
+                <div class="lang-cn"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="container-desc1" style="min-height:100vh;" data-aos="fade-up-right">
+        <div class="row m-3">
+            <div class="col-md-6 col-xs-12">
+                <br />
+                <h1>Specialist Consultants</h1>
+                <br />
+                <h4 class="services-desc">Our specialist consultant team has more than 45 years of experience in Marine
+                    engineering for the best quality propellers. Our expert team is fully capable to deliver the high
+                    performance propellers with proven results. Whatever is your requirement, our team is there to
+                    support you.</h4>
+            </div>
+            <div class="col-md-6 col-xs-12 rounded"
+                style="min-height:300px;background-image: url('https://image.shutterstock.com/z/stock-photo-engineer-people-meeting-working-and-pointing-at-a-drawings-in-office-for-discussing-engineering-704715226.jpg');background-position:center center;background-size:cover;">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="container-desc2" style="min-height:100vh;" data-aos="fade-up-right">
+        <div class="row m-3">
+            <div class="col-md-6 col-xs-12">
+                <br />
+                <h1>Design Team</h1>
+                <br />
+                <h4 class="services-desc">Our design team focuses on peak performance with better efficiency for our
+                    propellers. Our design would deliver its best capabilities at respective load RPM ,at reduced engine
+                    RPM, to conserve its engine reliability leading to lower fuel cost and engine durability.</h4>
+            </div>
+            <div class="col-md-6 col-xs-12 rounded"
+                style="min-height:300px;background-image: url('https://image.shutterstock.com/z/stock-photo-safety-helmet-engineering-construction-worker-equipment-380243965.jpg');background-position:center center;background-size:cover;">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="container-desc3" style="min-height:100vh;" data-aos="fade-up-right">
+        <div class="row m-3">
+            <div class="col-md-6 col-xs-12">
+                <br />
+                <h1>Our Propeller</h1>
+                <br />
+                <h4 class="services-desc">With decades of experience in small boat design and development of propellers,
+                    we deliver the finest propellers with proven results of low fuel cost, highest quality, reliability
+                    and durability. We design and develop latest innovative and optimized performance propellers.</h4>
+            </div>
+            <div class="col-md-6 col-xs-12 rounded"
+                style="min-height:300px;background-image: url('https://image.shutterstock.com/z/stock-photo-precision-welder-at-work-1017635974.jpg');background-position:center center;background-size:cover;">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="container-desc4" style="min-height:100vh;" data-aos="fade-up-right">
+        <div class="row m-3">
+            <div class="col-md-6 col-xs-12">
+                <br />
+                <h1>Ship to sell</h1>
+                <br />
+                <h4 class="services-desc">We believe in delivering the greatest in whatever we do. We offer different
+                    ranges of ships as per the customer requirement. First, our team will discuss the requisite in
+                    details and then based on the inputs from the clients; we provide the best options which suits
+                    clients’ need.</h4>
+            </div>
+            <div class="col-md-6 col-xs-12 rounded"
+                style="min-height:300px;background-image: url('https://image.shutterstock.com/z/stock-photo-red-boat-on-blue-sea-on-sunny-summer-day-245954047.jpg');background-position:center center;background-size:cover;">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="container-dec5" style="min-height:100vh;" data-aos="fade-up-right">
+        <div class="row m-3">
+            <div class="col-md-6 col-xs-12">
+                <br />
+                <h1>Customer Served</h1>
+                <br />
+                <h4 class="services-desc">Our specialist consultant team has more than 45 years of experience in Marine
+                    engineering for the best quality propellers. Our expert team is fully capable to deliver the high
+                    performance propellers with proven results. Whatever is your requirement, our team is there to
+                    support you.</h4>
+            </div>
+            <div class="col-md-6 col-xs-12 rounded border border-dark"
+                style="min-height:300px;background-image: url('images/map.png');background-position:center center;background-size:cover;">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="container-contact"
+        style="min-height:90vh;background-image:url('images/seca.map.final.jpg');background-position:center center;background-size:cover;"
+        data-aos="fade-up">
+        <div class="row" data-aos="zoom-in-up">
+            <div class="col" style="position:relative;">
+
+                <div class="card level-3"
+                    style="width:340px;height:360px;position:absolute;top:50%;left:50%;margin-top:60px;margin-left:-170px;">
+                    <h1 class="text-center trn">{contact}</h1>
+                    <br />
+                    <div class="lang-cn">
+                        <p class="text-center">联系方式:</p>
+                        <h6 class="text-center text-bold">Tel:(+6084)333 375</h6>
+                        <h6 class="text-center text-bold">Fax:(+6084)316 390</h6>
+                        <h6 class="text-center text-bold">Email: admin@jetmarine.my</h6>
+                        <br />
+                        <p class="text-center">地址:</p>
+                        <h6 class="text-center text-bold">No. 24A, Lanang Road, 96000 Sibu, Sarawak, East Malaysia.</h6>
+                        <br /><br />
+                    </div>
+                    <div class="lang-en">
+                        <p class="text-center">Contact</p>
+                        <h6 class="text-center text-bold">Tel:(+6084)333 375</h6>
+                        <h6 class="text-center text-bold">Fax:(+6084)316 390</h6>
+                        <h6 class="text-center text-bold">Email: admin@jetmarine.my</h6>
+                        <br />
+                        <p class="text-center">Address</p>
+                        <h6 class="text-center text-bold">No. 24A, Lanang Road, 96000 Sibu, Sarawak, East Malaysia.</h6>
+                        <br /><br />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="text-center bg-dark p-3">
+        <p class="text-white">Copyright © 2018 JET-MARINE. All Rights Reserved.</p>
+        <p class="text-white">Designed by Kamfu.</p>
+    </footer>
+    <a href="javascript:void(0);" id="back-top" class="text-bold"><i class=" m-1 fas fa-arrow-up"></i></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FeedEk/3.0.0/js/FeedEk.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://app.kamfu.app/jetmarine/jquery.translate.js"></script>
+    <script src="http://app.kamfu.app/jetmarine/lang-bm.js?1544402156"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // Optimalisation: Store the references outside the event handler:
+            var $window = $(window);
+
+            function checkWidth() {
+                var windowsize = $window.width();
+                if (windowsize > 1000) {
+                    // $('.showOnScroll').show();
+                    return true;
+                } else {
+                    // $('.showOnScroll').hide();
+                    return false;
+                }
+            }
+            // Execute on load
+            var widthStatus = checkWidth();
+            // Bind event listener
+            $(window).resize(checkWidth);
+
+
+            $('.lang-cn').hide();
+            $('.lang-en').show();
+            var translator = $('body').translate({
+                lang: "en",
+                t: dict
+            }); //use English
+
+
+
+            // $('#divRss').FeedEk({
+            // FeedUrl:'https://news.seca.org.my/feeds/posts/default'
+            // });
+            // $('#divRss').FeedEk({
+            // FeedUrl:'http://jquery-plugins.net/rss',
+            // MaxCount : 5,
+            // ShowDesc : true,
+            // ShowPubDate:true,
+            // DescCharacterLimit:100,
+            // TitleLinkTarget:'_blank',
+            // });
+
+
+
+            // When everthing done loaded
+            $('#mainBody').fadeIn();
+            $('.main-carousel').bxSlider();
+            AOS.init();
+            /* ========================================================================= */
+            /*  Navigation background on scroll
+            /* ========================================================================= */
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 200) {
+                    $("#navigation-lang").addClass('nav-shadow');
+                } else {
+                    $("#navigation-lang").removeClass('nav-shadow');
+                }
+            });
+            /* ========================================================================= */
+            /*	Back to Top
+            /* ========================================================================= */
+            $(window).scroll(function () {
+
+                if ($(window).scrollTop() > 200) {
+                    $("#back-top").fadeIn('fast');
+                } else {
+                    $("#back-top").fadeOut('fast');
+                }
+                if (checkWidth()) {
+                    if ($(window).scrollTop() > 200) {
+                        $(".showOnScroll").fadeIn('fast');
+                    } else {
+                        $(".showOnScroll").fadeOut('fast');
+                    }
+                }
+            });
+            $("#back-top").click(function () {
+                $("html, body").stop().animate({
+                    scrollTop: 0
+                }, 500, "linear")
+            });
+        });
+    </script>
+</body>
+
+</html>
